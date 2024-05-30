@@ -6,21 +6,21 @@ public class IMCCalculator {
 
     public static void main(String[] args) {
         try (Scanner scanner = new Scanner(System.in)) {
-            // Solicitar el peso del usuario en kilogramos
+            
             System.out.print("Enter your weight in kilograms: ");
             double peso = scanner.nextDouble();
 
-            // Solicitar la altura del usuario en metros
+            
             System.out.print("Enter your height in meters: ");
             double altura = scanner.nextDouble();
 
-            // Calcular el IMC
+            
             double imc = calcularIMC(peso, altura);
 
-            // Mostrar el resultado del IMC
-            System.out.printf("Su IMC es: %.2f%n", imc);
+            
+            System.out.printf("Your IMC is: %.2f%n", imc);
 
-            // Mostrar la categoría del IMC
+            
             System.out.println("Categoría: " + obtenerCategoriaIMC(imc));
         }
     }
